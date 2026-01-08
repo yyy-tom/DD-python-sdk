@@ -4,7 +4,14 @@ from typing import Literal, TypedDict
 OrderStatusType = Literal["openOrder", "orderHistory", "tradingHistory"]
 
 OrderStatus = Literal[
-    "open", "fully_filled", "partially_filled", "cancelled", "partially_cancelled"
+    "processing",
+    "open",
+    "fully_filled",
+    "partially_filled",
+    "cancelled",
+    "partially_cancelled",
+    "failed",
+    "closed",
 ]
 
 OrderSide = Literal["buy", "sell"]
